@@ -46,8 +46,8 @@ public class BoardRepositoryTest {
     public void save_test(){
         //given
         Board board = Board.builder()
-            .title("title 3")
-            .content("Spring Unit Test")
+            .title("title3")
+            .content("content3")
             .build();
         //when
         boardRepository.save(board);
@@ -66,8 +66,8 @@ public class BoardRepositoryTest {
         int id = 2;      
         //when
         Board board = boardRepository.findById(id).get();
-        board.setTitle("title update");
-        board.setContent("Update Test");
+        board.setTitle("title-update");
+        board.setContent("Update-test");
         em.flush();     
         //eye
         Board result = boardRepository.findById(id).get();
