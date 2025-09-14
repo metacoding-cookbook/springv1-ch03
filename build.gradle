@@ -6,28 +6,10 @@ plugins {
 
 group = 'com.metacoding'
 version = '0.0.1-SNAPSHOT'
-description = 'Demo project for Spring Boot'
 
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(24)
-	}
-}
-sourceSets {
-	main {
-		java {
-			srcDirs = ['src/main/java']
-		}
-		resources {
-			srcDirs = ['src/main/resources']
-		}
-	}
-}
-
-
-configurations {
-	compileOnly {
-		extendsFrom annotationProcessor
 	}
 }
 
