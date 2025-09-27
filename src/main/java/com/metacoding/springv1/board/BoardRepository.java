@@ -25,10 +25,9 @@ public class BoardRepository{
     public void save(Board board){
         em.persist(board);
     }
-    public void deleteById(int id) {
-        em.createQuery("delete from Board b where b.id = :id")
-          .setParameter("id", id)
-          .executeUpdate();
+    
+    public void delete(Board board) {
+        em.remove(board);
     }
     public Optional<Board> findByIdJoinUser(int id){
         Optional<Board> board = em.createQuery("select b from Board b join fetch b.user where b.id = :id", Board.class)

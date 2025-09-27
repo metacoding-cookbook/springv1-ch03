@@ -43,7 +43,7 @@ public class BoardService {
         if(board.getUser().getId() != sessionUserId){
             throw new Exception403("게시글을 삭제할 권한이 없습니다.");
         }
-        boardRepository.deleteById(boardId);
+        boardRepository.delete(board);
     }
 
     public BoardResponse.DTO 게시글수정폼(Integer boardId, Integer sessionUserId){

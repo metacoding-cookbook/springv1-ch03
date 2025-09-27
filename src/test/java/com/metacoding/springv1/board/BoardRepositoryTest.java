@@ -77,11 +77,12 @@ public class BoardRepositoryTest {
     }
 
     @Test
-    public void deleteById_test(){
+    public void delete_test(){
         //given
         int id = 2;
+        Board board = boardRepository.findById(id).get();
         //when
-        boardRepository.deleteById(id);
+        boardRepository.delete(board);
         //eye
         List<Board> boards = boardRepository.findAll();
         System.out.println("=======================");
