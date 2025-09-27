@@ -1,8 +1,6 @@
 package com.metacoding.springv1.board;
 
-import java.util.List;
-import java.util.Optional;
-
+import java.util.*;
 import org.springframework.stereotype.Repository;
 import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
