@@ -1,10 +1,9 @@
 package com.metacoding.springv1.board;
 
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 import lombok.Data;
 import com.metacoding.springv1.reply.Reply;
-import java.util.ArrayList;
 
 public class BoardResponse {
 

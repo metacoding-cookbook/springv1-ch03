@@ -5,8 +5,7 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import com.metacoding.springv1.core.handler.ex.Exception404;
-import com.metacoding.springv1.core.handler.ex.Exception403;
+import com.metacoding.springv1.core.handler.ex.*;
 import com.metacoding.springv1.user.User;
 
 @RequiredArgsConstructor

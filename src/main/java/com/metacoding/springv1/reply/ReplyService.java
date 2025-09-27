@@ -2,13 +2,11 @@ package com.metacoding.springv1.reply;
 
 import org.springframework.stereotype.Service;
 
-import com.metacoding.springv1.board.BoardRepository;
+import com.metacoding.springv1.board.*;
 import com.metacoding.springv1.user.User;
-import com.metacoding.springv1.board.Board;
 import lombok.RequiredArgsConstructor;
 import jakarta.transaction.Transactional;
-import com.metacoding.springv1.core.handler.ex.Exception404;
-import com.metacoding.springv1.core.handler.ex.Exception403;
+import com.metacoding.springv1.core.handler.ex.*;
 
 
 @RequiredArgsConstructor

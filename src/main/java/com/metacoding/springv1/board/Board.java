@@ -1,12 +1,11 @@
 package com.metacoding.springv1.board;
 
 import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 import org.hibernate.annotations.CreationTimestamp; 
 
-import com.metacoding.springv1.reply.Reply;
+import com.metacoding.springv1.reply.Reply; 
 import com.metacoding.springv1.user.User;
 
 import jakarta.persistence.*;
@@ -30,7 +29,7 @@ public class Board {
     @JoinColumn(name = "user_id") 
     private User user; 
 
-    @OneToMany(mappedBy = "board", fetch = FetchType.LAZY) // reply 필드 연결
+    @OneToMany(mappedBy = "board", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE) // reply 필드 연결
     private List<Reply> replies = new ArrayList<>();; // List가 없으면 null이 아닌 0 반환
 
     @Builder

@@ -1,7 +1,5 @@
 package com.metacoding.springv1.core.handler;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import com.metacoding.springv1.core.util.Script;
 import com.metacoding.springv1.core.handler.ex.Exception401;
 
